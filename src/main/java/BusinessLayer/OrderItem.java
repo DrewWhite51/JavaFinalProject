@@ -13,11 +13,11 @@ public class OrderItem {
     private int orderNumber;
     private int lineNumber;
     private int productID;
-    private int productDescription;
+    private String productDescription;
     private int quantity;
     private double price;
 
-    public OrderItem(int orderNumber, int lineNumber, int productID, int productDescription, int quantity, double price) {
+    public OrderItem(int orderNumber, int lineNumber, int productID, String productDescription, int quantity, double price) {
         this.orderNumber = orderNumber;
         this.lineNumber = lineNumber;
         this.productID = productID;
@@ -50,11 +50,11 @@ public class OrderItem {
         this.productID = productID;
     }
 
-    public int getProductDescription() {
+    public String getProductDescription() {
         return productDescription;
     }
 
-    public void setProductDescription(int productDescription) {
+    public void setProductDescription(String productDescription) {
         this.productDescription = productDescription;
     }
 

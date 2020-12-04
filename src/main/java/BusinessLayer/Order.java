@@ -5,6 +5,8 @@
  */
 package BusinessLayer;
 
+import java.util.Date;
+
 /**
  *
  * @author Drew
@@ -12,9 +14,9 @@ package BusinessLayer;
 public class Order {
     private int orderNumber;
     private int customerID;
-    private int date;
+    private String date;
 
-    public Order(int orderNumber, int customerID, int date) {
+    public Order(int orderNumber, int customerID, String date) {
         this.orderNumber = orderNumber;
         this.customerID = customerID;
         this.date = date;
@@ -36,11 +38,11 @@ public class Order {
         this.customerID = customerID;
     }
 
-    public int getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
