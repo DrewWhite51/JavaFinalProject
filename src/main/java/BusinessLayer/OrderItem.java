@@ -76,7 +76,7 @@ public class OrderItem {
 
     @Override
     public String toString() {
-        return "OrderItem{" + "orderNumber = " + orderNumber + ", lineNumber = " + lineNumber + ", productID = " + productID + ", productDescription = " + productDescription + ", quantity = " + quantity + ", price=" + price + '}';
+        return "OrderItem{" + "orderNumber = " + orderNumber + ", lineNumber = " + lineNumber + ", productID = " + productID + ", productDescription = " + productDescription + ", quantity = " + quantity + ", price = " + price + '}';
     }
     
 }

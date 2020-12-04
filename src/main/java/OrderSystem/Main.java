@@ -65,18 +65,22 @@ public class Main {
         productDM.create(secondProduct);
         productDM.create(thirdProduct);
         
+        System.out.println("Reading customers from databse.");
         ArrayList<Customer> customersFromDB = customerDM.getAll();
         for (Customer dbCustomer : customersFromDB) {
             System.out.println(dbCustomer);
         }
+        System.out.println("Reading orders from databse.");
         ArrayList<Order> ordersFromDB = orderDM.getAll();
         for (Order dbOrder : ordersFromDB) {
             System.out.println(dbOrder);
         }
+        System.out.println("Reading order items from databse.");
         ArrayList<OrderItem> orderItemsFromDB = orderItemDM.getAll();
         for (OrderItem dbOrderItems : orderItemsFromDB) {
             System.out.println(dbOrderItems);
         }
+        System.out.println("Reading products from databse.");
         ArrayList<Product> productsFromDB = productDM.getAll();
         for (Product dbProduct : productsFromDB) {
             System.out.println(dbProduct);
